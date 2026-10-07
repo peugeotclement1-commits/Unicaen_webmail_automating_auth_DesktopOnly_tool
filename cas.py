@@ -12,7 +12,7 @@ driver = webdriver.Chrome()
 
 
 # URL for the initial login (using reqres.in mock service)
-login_url = "https://webmail.unicaen.fr"
+"""the fetching of tsx buton press will give the new login url login_url = """
 
 driver.get(login_url)
 
@@ -53,7 +53,7 @@ password=driver.find_element(By.ID, "password")
 
 
 
-def login():
+def login(login_url):
 
     username = WebDriverWait(driver, 10).until(
         EC.element_to_be_clickable((By.ID, "username")) # Adaptez le By.ID / By.NAME selon votre code
@@ -78,8 +78,8 @@ def login():
 	
    
     
-    global login_url
-    login_url = driver.current_url
+    global new_login_url
+    new_login_url = driver.current_url
 
 
 
@@ -111,14 +111,17 @@ def access_third_auth():
     str(combi)
     print(combi)
 
+    #token=driver.find_element(By.ID,"token")
+    #token.send_keys(login_grid[combi[0]+combi[1]])
+
     input(" press enter to quit ")
     driver.quit()
      
 def main() -> None:
 
-    driver.get(login_url)
 
-    login()
+    login(login_url, None)
+
 
     access_second_auth()
 
