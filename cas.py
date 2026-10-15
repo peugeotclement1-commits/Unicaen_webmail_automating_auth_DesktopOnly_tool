@@ -3,13 +3,18 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import requests
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
 
 
 # Start a session
 session = requests.Session()
 
-driver = webdriver.Chrome()
+# Initialisation automatique du driver
+service = Service(ChromeDriverManager().install())
+driver = webdriver.Chrome(service=service)
 
+driver.get("https://www.google.com")
 
 # URL for the initial login (using reqres.in mock service)
 login_url = "https://cas.unicaen.fr/login?service=https%3A%2F%2Fwebmail.unicaen.fr%2Fpublic%2Fpreauth-unicaen-fr.jsp"
