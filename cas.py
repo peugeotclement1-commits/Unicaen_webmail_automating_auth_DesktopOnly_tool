@@ -3,10 +3,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import requests
-import time
 
-
-time.sleep(3)
 
 # Start a session
 session = requests.Session()
