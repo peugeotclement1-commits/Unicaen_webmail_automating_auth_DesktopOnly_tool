@@ -11,8 +11,7 @@ Pour utiliser l'exécutable, vous devez vous munir de vos identifiants d'accès.
 2. **Mot de passe**
 
 3. **Éléments de la grille de code** (saisir chaque élément demandé par le système d'authentification double-facteur / grille de sécurité).
-
-   💡 Note : Google Chrome (ou Chromium) doit être installé sur votre machine pour que l'automatisation Selenium puisse fonctionner.
+💡 Note : Google Chrome (ou Chromium) doit être installé sur votre machine pour que l'automatisation Selenium puisse fonctionner.
 
 💻 Installation de Python et des Dépendances (Linux, Windows, macOS)
 
@@ -52,6 +51,7 @@ python -m venv .venv
 Installez les dépendances :
 
 pip install selenium webdriver-manager requests pyinstaller
+r
 
 ## 🛠️ Guide de Création de l'Exécutable
 
