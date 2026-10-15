@@ -1,4 +1,4 @@
-WebmailToMail Automator
+   WebmailToMail Automator
 
 Ce projet permet d'automatiser l'accès et le traitement sur Webmail à l'aide d'un script Python / Selenium compilé sous forme d'exécutable autonome pour Linux.
 
@@ -74,4 +74,4 @@ Pour pouvoir exécuter l'application facilement depuis le bureau Linux sans pass
    
    ```
 
-4. **Activation sur l'interface graphique :** Faites un clic droit sur l'icône du raccourci sur votre bureau, puis cliquez sur **"Autoriser le lancement"** (*Allow Launching*)._md.md…]()
+4. **Activation sur l'interface graphique :** Faites un clic droit sur l'icône du raccourci sur votre bureau, puis cliquez sur **"Autoriser le lancement"** (*Allow Launching*).
