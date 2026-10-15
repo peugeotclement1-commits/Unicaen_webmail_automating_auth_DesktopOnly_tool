@@ -12,6 +12,47 @@ Pour utiliser l'exécutable, vous devez vous munir de vos identifiants d'accès.
 
 3. **Éléments de la grille de code** (saisir chaque élément demandé par le système d'authentification double-facteur / grille de sécurité).
 
+   💡 Note : Google Chrome (ou Chromium) doit être installé sur votre machine pour que l'automatisation Selenium puisse fonctionner.
+
+💻 Installation de Python et des Dépendances (Linux, Windows, macOS)
+
+Si vous souhaitez exécuter le projet à partir du code source cas.py ou recompiler l'exécutable vous-même, vous devez installer Python et les bibliothèques requises.
+
+🐧 Sous Linux (Ubuntu / Debian)
+
+Mettez à jour les paquets et installez Python, pip et l'environnement virtuel :
+
+sudo apt update
+sudo apt install python3 python3-pip python3-venv
+
+
+Clonez le dépôt et créez un environnement virtuel :
+
+python3 -m venv .venv
+source .venv/bin/activate
+
+
+Installez les dépendances du projet :
+
+pip install selenium webdriver-manager requests pyinstaller
+
+
+🪟 Sous Windows
+
+Téléchargez et installez Python depuis le site officiel : python.org.
+
+⚠️ Assurez-vous de bien cocher la case "Add Python to PATH" lors de l'installation.
+
+Ouvre l'invite de commandes (cmd) ou PowerShell et créez un environnement virtuel :
+
+python -m venv .venv
+.venv\Scripts\activate
+
+
+Installez les dépendances :
+
+pip install selenium webdriver-manager requests pyinstaller
+
 ## 🛠️ Guide de Création de l'Exécutable
 
 Si vous souhaitez modifier le code source (`cas.py`) et recompiler l'exécutable vous-même, suivez la démarche ci-dessous.
